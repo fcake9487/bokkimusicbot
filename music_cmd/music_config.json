@@ -1,0 +1,20 @@
+{
+    "c_help":{
+        "j":"Joins the current voice channel",
+        "p":"Plays the music, that is it",
+        "pause":"Pauses the current song being played",
+        "r":"Resumes playing with the discord bot",
+        "s":"Skips the current song being played",
+        "q":"Displays the current songs in queue",
+        "c":"Clears all songs in the queue",
+        "l":"Kicks the discord bot",
+        "i":"Insert the requested song to the queue",
+        "n":"Displays the current song information"
+    },
+    "q_img":{
+        "1":"./music_cmd/img/kita_happy.jpg",
+        "2":"./music_cmd/img/nijika_happy.jpg",
+        "3":"./music_cmd/img/bocchi_happy.jpg",
+        "4":"./music_cmd/img/ryou_happy.jpg"
+    }
+}
