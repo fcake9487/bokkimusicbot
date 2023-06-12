@@ -51,6 +51,7 @@ class Music(commands.Cog):
         self.is_playing = False
         self.is_looped = False
         self.is_paused = False
+        self.index = 0 #don't use pop, so I can implement loop feature
 
         await self.vc.disconnect()
         self.music_queue = []
@@ -69,7 +70,6 @@ class Music(commands.Cog):
                 downloader = yt(self.YDL_OPTIONS)
                 r = downloader.extract_info(f"ytsearch:{item}", download=False)['entries'][0]
         except:
-            asyncio.wait(1)
             return False
 
         return {'url': r.get('url'), 

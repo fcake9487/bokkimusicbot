@@ -3,7 +3,7 @@ from discord.ext import commands
 import json, os
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix='!', activity = discord.Game('Guitar Hero'),intents=intents)
+bot = commands.Bot(command_prefix='&', activity = discord.Game('Guitar Hero'),intents=intents)
 
 configFile = open("config.json","r")
 configData = json.load(configFile)
